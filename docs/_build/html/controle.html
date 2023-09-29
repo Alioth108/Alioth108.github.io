@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Controle &mdash; Projet Python gestion de note  documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Promotion" href="promotion.html" />
+    <link rel="prev" title="Eleve" href="eleve.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Projet Python gestion de note
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="eleve.html">Eleve</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Controle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#attributs">Attributs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#methodes">Méthodes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="promotion.html">Promotion</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Projet Python gestion de note</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Controle</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/controle.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="controle">
+<h1>Controle<a class="headerlink" href="#controle" title="Permalink to this heading"></a></h1>
+<p>Cette classe représente un contrôle.</p>
+<section id="attributs">
+<h2>Attributs<a class="headerlink" href="#attributs" title="Permalink to this heading"></a></h2>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="date">
+<span class="sig-name descname"><span class="pre">date</span></span><a class="headerlink" href="#date" title="Permalink to this definition"></a></dt>
+<dd><p>La date du contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="matiere">
+<span class="sig-name descname"><span class="pre">matiere</span></span><a class="headerlink" href="#matiere" title="Permalink to this definition"></a></dt>
+<dd><p>La matière du contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="coefficient">
+<span class="sig-name descname"><span class="pre">coefficient</span></span><a class="headerlink" href="#coefficient" title="Permalink to this definition"></a></dt>
+<dd><p>Le coefficient du contrôle (par défaut : 1).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="promotion">
+<span class="sig-name descname"><span class="pre">promotion</span></span><a class="headerlink" href="#promotion" title="Permalink to this definition"></a></dt>
+<dd><p>La promotion à laquelle est associé le contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Optional[‘Promotion’]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="nom">
+<span class="sig-name descname"><span class="pre">nom</span></span><a class="headerlink" href="#nom" title="Permalink to this definition"></a></dt>
+<dd><p>Le nom du contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="methodes">
+<h2>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this heading"></a></h2>
+<dl class="py method">
+<dt class="sig sig-object py" id="init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">nom</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">matiere</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">coefficient</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#init__" title="Permalink to this definition"></a></dt>
+<dd><p>Initialise un objet Contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>nom</strong> (<em>str</em>) – Le nom du contrôle.</p></li>
+<li><p><strong>date</strong> (<em>date</em>) – La date du contrôle.</p></li>
+<li><p><strong>matiere</strong> (<em>str</em>) – La matière du contrôle.</p></li>
+<li><p><strong>coefficient</strong> (<em>int</em>) – Le coefficient du contrôle (par défaut : 1).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Noindex<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="str__">
+<span class="sig-name descname"><span class="pre">__str__</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#str__" title="Permalink to this definition"></a></dt>
+<dd><p>Renvoie une représentation en chaîne de caractères du contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Une chaîne de caractères représentant le contrôle.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+<dt class="field-odd">Noindex<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="moyenne">
+<span class="sig-name descname"><span class="pre">moyenne</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#moyenne" title="Permalink to this definition"></a></dt>
+<dd><p>Calcule la moyenne des élèves sur ce contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Noindex<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>La moyenne des élèves sur ce contrôle.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+<dt class="field-even">Noindex<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+<p>Exemple d’utilisation :</p>
+</dd></dl>
+
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eleve</span> <span class="o">=</span> <span class="n">Eleve</span><span class="p">(</span><span class="s2">&quot;Jane&quot;</span><span class="p">,</span> <span class="s2">&quot;Doe&quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s2">&quot;Féminin&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">controle1</span> <span class="o">=</span> <span class="n">Controle</span><span class="p">(</span><span class="s2">&quot;Mathématiques&quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="s2">&quot;Mathématiques&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">promotion</span> <span class="o">=</span> <span class="n">Promotion</span><span class="p">(</span><span class="s2">&quot;Promo 2023&quot;</span><span class="p">,</span> <span class="mi">2023</span><span class="p">,</span> <span class="s2">&quot;Professeur Principal&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve1</span> <span class="o">=</span> <span class="n">Eleve</span><span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2002</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">15</span><span class="p">),</span> <span class="s2">&quot;Féminin&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve2</span> <span class="o">=</span> <span class="n">Eleve</span><span class="p">(</span><span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;Johnson&quot;</span><span class="p">,</span> <span class="n">date</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">7</span><span class="p">),</span> <span class="s2">&quot;Masculin&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve1</span><span class="o">.</span><span class="n">notes</span><span class="p">[</span><span class="n">controle1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">18.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve2</span><span class="o">.</span><span class="n">notes</span><span class="p">[</span><span class="n">controle1</span><span class="p">]</span> <span class="o">=</span> <span class="mf">16.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">promotion</span><span class="o">.</span><span class="n">ajouter_eleve</span><span class="p">(</span><span class="n">eleve1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">promotion</span><span class="o">.</span><span class="n">ajouter_eleve</span><span class="p">(</span><span class="n">eleve2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">controle1</span><span class="o">.</span><span class="n">promotion</span> <span class="o">=</span> <span class="n">promotion</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve</span><span class="o">.</span><span class="n">promotion</span> <span class="o">=</span> <span class="n">promotion</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve</span><span class="o">.</span><span class="n">ajouter_note</span><span class="p">(</span><span class="n">controle1</span><span class="p">,</span> <span class="mf">15.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">eleve</span><span class="o">.</span><span class="n">moyenne</span><span class="p">(</span><span class="s2">&quot;Mathématiques&quot;</span><span class="p">)</span>
+<span class="go">15.0</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="recuperer_notes">
+<span class="sig-name descname"><span class="pre">recuperer_notes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#recuperer_notes" title="Permalink to this definition"></a></dt>
+<dd><p>Récupère les notes des élèves pour ce contrôle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Noindex<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Un dictionnaire associant les élèves à leurs notes.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict[“Eleve”, float]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="eleve.html" class="btn btn-neutral float-left" title="Eleve" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="promotion.html" class="btn btn-neutral float-right" title="Promotion" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Bayard Davyd.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
